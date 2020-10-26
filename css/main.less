@@ -1,0 +1,247 @@
+@rem: 20rem;
+.head-tit {
+  font-size: 1.6rem;
+  color: #fff;
+  line-height: 4.4rem;
+  height: 4.4rem;
+  position: relative;
+  background: #000;
+  text-align: center;
+  overflow: hidden;
+  z-index: 2;
+}
+.head-tit > .return {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4.4rem;
+  background: url(../images/return.png) no-repeat 1rem center;
+  background-size: 0.8rem;
+}
+img {
+  width: 100%;
+}
+#nav {
+  background: #fff;
+  font-size: 1.15rem;
+}
+#nav ul {
+  padding-left: 3.75rem;
+  background: url(../images/nav.png) no-repeat left top;
+  background-size: 3.75rem;
+}
+#nav.type2 ul{
+  background: url(../images/nav_02.png) no-repeat left top;
+  background-size: 3.75rem;
+}
+#nav a {
+  display: block;
+}
+#nav li {
+  line-height: 4.5rem;
+  height: 4.5rem;
+  border-bottom: 1px solid #ddd;
+  border-right: 1rem solid transparent;
+  background: url(../images/right.png) no-repeat right center;
+  background-size: 0.55rem;
+}
+.switch-link {
+  background: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.switch-link > a {
+  float: left;
+  width: 50%;
+  line-height: 4.4rem;
+  position: relative;
+}
+.switch-link > a:nth-child(1):after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 1.2rem;
+  width: 1px;
+  height: 2rem;
+  background: #cfcfcf;
+}
+.switch-link .active {
+  color: #2892ff;
+}
+.switch-link .active:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -0.9rem;
+  margin-left: -0.5rem;
+  border: 0.5rem solid transparent;
+  border-top-color: #fff;
+}
+.switch-link.type2 > a:nth-child(1):after {
+  display: none;
+}
+.switch-link.type2 a {
+  border-bottom: 1px solid #e5e5e5;
+}
+.switch-link.type2 .active:before {
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  margin: 0;
+  border: none;
+  border-bottom: 0.4rem solid #2892ff;
+}
+.support{
+  padding:1.15rem 0 2.15rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #999;
+}
+.support span{line-height: 1.5rem;}
+.support>span:nth-child(1){
+  margin-bottom: 0.25rem;
+  position: relative;
+}
+.support>span:nth-child(1):before,.support>span:nth-child(1):after{
+  content: '';
+  position: absolute;
+  left: -1.3rem;
+  top: 0.75rem;
+  width: 1rem;
+  height: 1px;
+  background: #cfcfcf;
+}
+.support>span:nth-child(1):after{
+  left: auto;
+  right: -1.3rem;
+}
+.support br+span:before{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url(../images/phone.png);
+  background-size: 100%;
+  margin: 0 0.4rem 0.15rem 0;
+}
+/*使用手册修改*/
+.type2 .mt600{
+	margin-top:30rem;}
+.type2 .mt600 a{
+	width:23rem;
+	height:9rem;
+	display:inline-block !important;
+	margin-bottom:2.5rem;}
+.type2 .mt600 a img{
+	width:23rem;
+	height:9rem;}
+.lg{
+	overflow:hidden;
+	width:100%;
+	text-align:center;
+	background:url(../images/manual_img.jpg) no-repeat right top  !important;
+	background-size:100% 55rem !important;
+	 }
+.lg .mt40{margin-bottom:1.5rem;}
+.type2 .mt600 a.lk-img{
+	background:url(../images/link_img.png) no-repeat right center;
+	background-size:23rem 9rem; 
+	}
+.type2 .mt600 a.img-a{
+	background:url(../images/img_a.png) no-repeat right center;
+	background-size:23rem 9rem; 	
+	}
+  /*广告机主政策*/
+  .agent-a{
+    position:relative;
+    text-align: center;
+  }
+ .agent-a .tp500{
+    position:absolute;
+    width:100%;
+    top:9.7%;
+    line-height: 86/@rem;
+    text-align: center;
+    left:0;
+    padding:0 92/750*100%  ;
+  }
+  .agent-a a{
+    float:left;
+    width:100/3%;
+    background:#fff;
+    line-height: 66/@rem;
+  }
+  .agent-a a.br-l{
+    border-radius:60/@rem 0 0 60/@rem;
+  }
+  .agent-a a.br-r{
+    border-radius:0 60/@rem 60/@rem 0;
+  }
+.agent-a a.br-lr{
+    border-left:1px solid #dddddd;
+    border-right:1px solid #ddd;
+  }
+.agent-a a.active{
+    border:0;
+    background: url(../images/bd-img-a.png) no-repeat center;
+    background-size:100% 86/@rem;
+    height:86/@rem;
+  }
+  .agent-a a.active-a{
+    border:0;
+    background: url(../images/bd-img-a.png) no-repeat center;
+    background-size:100% 86/@rem;
+    height:86/@rem;
+    color:#fff;
+    background-position:12/@rem;
+  }
+.agent-a a.active-b{
+    border:0;
+    background: url(../images/bd-img-b.png) no-repeat center;
+    background-size:100% 86/@rem;
+    height:86/@rem;
+    color:#fff;
+  }
+.agent-a a.active-c{
+    border:0;
+    background: url(../images/bd-img-c.png) no-repeat center;
+    background-size:100% 86/@rem;
+    height:86/@rem;
+    color:#fff;
+    background-position:-12/@rem;
+  }
+  .agent-a .bd a{
+    top:15.5%;
+    position:absolute;
+    color:#fff;
+    width:300/@rem;
+    line-height: 80/@rem;
+    left:50%;
+    margin-left:-150/@rem;
+    font-size:36/@rem;
+  }
+.agent-a .bd{
+    overflow: hidden;
+}
+.agent-a .bd-orange{
+    background:url(../images/bd-iimg.png) no-repeat center;
+    background-size:100%;
+  }
+.agent-a .bd-green{
+    background:url(../images/bd_green.png) no-repeat center;
+    background-size:100%;
+    top:42.8% !important;
+  }
+.agent-a .pink-colour{
+    background:url(../images/pink_colour_img.png) no-repeat center;
+    background-size:100%;
+    top:59.5% !important;
+  }
+ 
+	
+	
+	
+	
+	

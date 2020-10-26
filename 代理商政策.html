@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0" />
+<meta content="telephone=no" name="format-detection" />
+<title>E键广告使用手册</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+<!-- JavaScript -->
+<script src="js/require.min.js" type="text/javascript"></script>
+<script src="js/config.js"></script>
+</head>
+<body>
+	<div class="agent-a">
+		<img src="images/H5.jpg?v=2">
+		<img src="images/h5_02.jpg?v=2">
+         <div class="tp500">
+             <a class="br-l active-a">广告机主政策</a>
+             <a class="br-lr">广告投放政策</a>
+             <a class="br-r">代理商政策</a>
+         </div>
+           <div class="bd">
+            <a class="bd-orange">广告机主政策</a>
+            <a class="bd-green">广告投放政策</a>
+            <a class="pink-colour">代理商政策</a>
+           </div>
+	</div>
+	<img src="images/foot.jpg">
+ <script>
+require(['jquery'],function(){
+	$(function(){
+		var _thisa = $('.bd-orange').offset().top;
+		var _thisb = $('.bd-green').offset().top;
+		var _thisc = $('.pink-colour').offset().top;
+
+		$(".tp500 a").click(function(){
+		   var that = $(this),
+			   index = that.index(),
+			   top = index == 0?_thisa+'px':index==1? _thisb + 'px':_thisc + 'px',
+			   $class = index == 0?'active-a':index==1?'active-b':'active-c',
+			   $class2 = index == 0?'active-b active-c':index==1?'active-a active-c':'active-a active-b';
+		   $('body,html').animate({scrollTop: top},600);
+		   that.addClass($class).siblings().removeClass($class2)
+		})
+	})
+}) 
+ </script>
+</body>
+</html>
